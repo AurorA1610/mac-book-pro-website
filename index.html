@@ -4,108 +4,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- bootstrap stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <title>Mac Book Pro</title>
 </head>
-<body>
-    <section class="container">
-        <div class="row gx-5 mt-5">
-          <div class="col-lg-6">
-            <img class="img-fluid" src="images/mac.png" alt="">
-          </div>
-          <div class="col-lg-6">
-            <header class="mb-5">
-                <h1>Customize your Blue 24-inch iMac with Apple M1 chip</h1>
-                <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard - US English</p>
-            </header>
-            <main>
-                <h4>Memory</h4>
-                <div class="d-flex flex-row bd-highlight mb-5">
-                    <div>
-                        <button id="first-memory" class="px-3 py-2 bd-highlight border border-3 rounded me-1 btn">8GB unified memory</button>
-                    </div>
-                    <div>
-                        <button id="second-memory" class="px-3 py-2 bd-highlight border border-3 rounded me-1 btn">16GB unified memory</button>
-                    </div>
-                </div>
-                <h4>Storage</h4>
-                <div class="d-flex flex-row bd-highlight mb-5">
-                    <div>
-                        <button id="first-storage" class="px-3 py-2 bd-highlight border border-3 rounded me-1 btn">256GB SSD storage</button>
-                    </div>
-                    <div>
-                        <button id="second-storage" class="px-3 py-2 bd-highlight border border-3 rounded me-1 btn">512GB SSD storage</button>
-                    </div>
-                    <div>
-                        <button id="third-storage" class="px-3 py-2 bd-highlight border border-3 rounded me-1 btn">1TB SSD storage</button>
-                    </div>
-                </div>
-                <h4>Choose your delivery option</h4>
-                <div class="d-flex flex-row bd-highlight mb-5">
-                    <div>
-                        <button id="first-delivery" class="px-3 py-2 bd-highlight border border-3 rounded me-1 btn">Friday, Aug 25 FREE Prime Delivery</button>
-                    </div>
-                    <div>
-                        <button id="second-delivery" class="px-3 py-2 bd-highlight border border-3 rounded me-1 btn">Friday, Aug 21 Delivery Charge $20</button>
-                    </div>
-                </div>
 
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="d-flex flex-row justify-content-between mb-3 border-bottom border-2">
-                            <div>
-                                <h5>Best Price</h5>
-                            </div>
-                            <div>
-                                <h5>$<span id="best-price">1299</span></h5>
-                            </div>
+
+<body>
+
+    <!-- main starts -->
+    <main>
+        <section class="container">
+            <div class="row gx-5 mt-5">
+
+                <!-- column for the MACbook image  -->
+              <div class="col-lg-6">
+                <img class="img-fluid" src="images/mac.png" alt="">
+              </div>
+
+              <!-- column for write-ups  -->
+              <div class="col-lg-6">
+
+                <!-- child header starts  -->
+                <header class="mb-5">
+                    <h1>Customize your Blue 24-inch iMac with Apple M1 chip</h1>
+                    <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard - US English</p>
+                </header>
+                <!-- child header ends  -->
+
+                <!-- child main starts  -->
+                <main>
+                    
+                    <!-- MACbook part options start  -->
+
+                    <!-- memory options  -->
+                    <h4>Memory</h4>
+                    <div class="d-flex flex-row bd-highlight mb-5">
+                        <div>
+                            <button id="first-memory" class="px-3 py-2 bd-highlight border border-3 rounded me-1 btn">8GB unified memory</button>
                         </div>
-                        <div class="d-flex flex-row justify-content-between mb-3 border-bottom border-2">
-                            <div>
-                                <h5>Extra Memory Cost</h5>
-                            </div>
-                            <div>
-                                <h5>$<span id="memory-cost">0</span></h5>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-row justify-content-between mb-3 border-bottom border-2">
-                            <div>
-                                <h5>Extra Storage Cost</h5>
-                            </div>
-                            <div>
-                                <h5>$<span id="storage-cost">0</span></h5>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-row justify-content-between mb-3 border-bottom border-3 border-dark">
-                            <div>
-                                <h5>Delivery Charge</h5>
-                            </div>
-                            <div>
-                                <h5>$<span id="delivery-cost">0</span></h5>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-row justify-content-between mb-4 border-bottom border-2">
-                            <div>
-                                <h5>Total Price</h5>
-                            </div>
-                            <div>
-                                <h5>$<span id="total-cost">1299</span></h5>
-                            </div>
+                        <div>
+                            <button id="second-memory" class="px-3 py-2 bd-highlight border border-3 rounded me-1 btn">16GB unified memory</button>
                         </div>
                     </div>
-                    <h6>Add Promo code</h6>
-                    <div class="d-flex mb-5">
-                        <input type="text">
-                        <button class="btn-danger rounded px-3 py-1">Apply</button>
+
+                    <!-- storage options  -->
+                    <h4>Storage</h4>
+                    <div class="d-flex flex-row bd-highlight mb-5">
+                        <div>
+                            <button id="first-storage" class="px-3 py-2 bd-highlight border border-3 rounded me-1 btn">256GB SSD storage</button>
+                        </div>
+                        <div>
+                            <button id="second-storage" class="px-3 py-2 bd-highlight border border-3 rounded me-1 btn">512GB SSD storage</button>
+                        </div>
+                        <div>
+                            <button id="third-storage" class="px-3 py-2 bd-highlight border border-3 rounded me-1 btn">1TB SSD storage</button>
+                        </div>
                     </div>
-                </div>
-            </main>
-          </div>
-        </div>
-        <hr>
-        <h2 class="text-center">Total: $<span>1299</span></h1>
-    </section>
+
+                    <!-- delivery options -->
+                    <h4>Choose your delivery option</h4>
+                    <div class="d-flex flex-row bd-highlight mb-5">
+                        <div>
+                            <button id="first-delivery" class="px-3 py-2 bd-highlight border border-3 rounded me-1 btn">Friday, Aug 25 FREE Prime Delivery</button>
+                        </div>
+                        <div>
+                            <button id="second-delivery" class="px-3 py-2 bd-highlight border border-3 rounded me-1 btn">Friday, Aug 21 Delivery Charge $20</button>
+                        </div>
+                    </div>
+                    <!-- MACbook part options end  -->
+                    
+                    <!-- cost list starts  -->
+                    <div class="row">
+                        <div class="col-lg-6">
+
+                            <!-- best price  -->
+                            <div class="d-flex flex-row justify-content-between mb-3 border-bottom border-2">
+                                <div>
+                                    <h5>Best Price</h5>
+                                </div>
+                                <div>
+                                    <h5>$<span id="best-price">1299</span></h5>
+                                </div>
+                            </div>
+
+                            <!-- memory cost  -->
+                            <div class="d-flex flex-row justify-content-between mb-3 border-bottom border-2">
+                                <div>
+                                    <h5>Extra Memory Cost</h5>
+                                </div>
+                                <div>
+                                    <h5>$<span id="memory-cost">0</span></h5>
+                                </div>
+                            </div>
+
+                            <!-- storage cost  -->
+                            <div class="d-flex flex-row justify-content-between mb-3 border-bottom border-2">
+                                <div>
+                                    <h5>Extra Storage Cost</h5>
+                                </div>
+                                <div>
+                                    <h5>$<span id="storage-cost">0</span></h5>
+                                </div>
+                            </div>
+
+                            <!-- delivery charge  -->
+                            <div class="d-flex flex-row justify-content-between mb-3 border-bottom border-3 border-dark">
+                                <div>
+                                    <h5>Delivery Charge</h5>
+                                </div>
+                                <div>
+                                    <h5>$<span id="delivery-cost">0</span></h5>
+                                </div>
+                            </div>
+
+                            <!-- total price  -->
+                            <div class="d-flex flex-row justify-content-between mb-4 border-bottom border-2">
+                                <div>
+                                    <h5>Total Price</h5>
+                                </div>
+                                <div>
+                                    <h5>$<span id="total-cost">1299</span></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- promo code input  -->
+                        <h6>Add Promo code</h6>
+                        <div class="d-flex mb-5">
+                            <input id="promo-text" class="border-danger" type="text">
+                            <button id="apply-promo" class="btn-danger px-3 py-1">Apply</button>
+                        </div>
+                    </div>
+                </main>
+                <!-- child main ends  -->
+
+              </div>
+            </div>
+            <hr>
+            
+            <!-- final total price  -->
+            <h2 class="text-center">Total: $<span id="final-total">1299</span></h1>
+        </section>
+    </main>
+    <!-- main ends  -->
+
+    <!-- javascript -->
     <script src="js/app.js"></script>
 </body>
 </html>
